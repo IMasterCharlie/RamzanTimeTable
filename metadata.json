@@ -1,0 +1,7 @@
+{
+  "name": "Ramzan Mubarak Premium Experience",
+  "description": "A magical, cinematic, and spiritually immersive Ramadan greeting website with live prayer times and elegant visual effects.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
