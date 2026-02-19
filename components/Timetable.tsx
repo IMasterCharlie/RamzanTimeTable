@@ -3,10 +3,11 @@ import React, { useState, useEffect } from 'react';
 // @ts-ignore
 import { motion as motionBase, AnimatePresence } from 'framer-motion';
 
+
 const motion = motionBase as any;
 
 // Ramadan 2026 dates
-const RAMADAN_2026_START = new Date(2026, 1, 17); // February 17, 2026
+const RAMADAN_2026_START = new Date(2026, 1, 19); // February 19, 2026
 
 interface DayTiming {
   day: number;
@@ -473,7 +474,7 @@ export const Timetable: React.FC = () => {
             {location?.country && <span className="text-slate-500 text-lg font-normal">, {location.country}</span>}
           </h3>
           <p className="text-slate-400 mt-1 font-medium tracking-wide">
-            Ramzan 2026 (Feb 17 - Mar 18) • <span className="text-amber-500/80">30 Days Timetable</span>
+            Ramzan 2026 (Feb 19 - Mar 20) • <span className="text-amber-500/80">30 Days Timetable</span>
           </p>
           {location && (
             <p className="text-slate-600 text-xs mt-1 flex items-center gap-1">
@@ -574,7 +575,7 @@ export const Timetable: React.FC = () => {
         whileHover={{ scale: 1.02 }}
         className="mb-12 relative overflow-hidden rounded-[2rem] border border-amber-500/30 bg-gradient-to-br from-slate-900 via-amber-950/20 to-slate-900 group cursor-pointer"
       >
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20 group-hover:opacity-30 transition-opacity duration-700"></div>
+        <div className="absolute inset-0 bg-[url('/Cosmetics_Background_Image.PNG')] bg-cover bg-center opacity-80 group-hover:opacity-30 transition-opacity duration-700"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent"></div>
 
         <div className="relative z-10 p-8 md:p-10 flex flex-col items-center justify-center gap-6">
@@ -591,9 +592,9 @@ export const Timetable: React.FC = () => {
             <p className="text-slate-300 mb-6 text-lg text-center">
               100% Original and Multi Brand Cosmetic ,<span className="text-amber-500">Skin and Hair Care</span> Products Trusted Quality Genuine Care.
             </p>
-            <button className="px-8 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-full transition-all shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] mx-auto block">
+            <a className="px-8 py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-full transition-all shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] mx-auto block" href="https://alhudacosme46545.store.link/" target="_blank" rel="noopener noreferrer">
               Discover Products
-            </button>
+            </a>
           </div>
 
           <div className="hidden md:flex items-center justify-center">
@@ -697,9 +698,9 @@ export const Timetable: React.FC = () => {
       {/* Footer Note */}
       <div className="flex justify-center mt-8">
         <div className="inline-flex items-center gap-3 bg-slate-900/60 border border-slate-800 rounded-full px-8 py-3 shadow-lg">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+          <span className="relative flex h-4 w-4">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-4 w-4 bg-red-500"></span>
           </span>
           <span className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">
             Powered by Aladhan API • Times based on your GPS location
